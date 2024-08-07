@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header img {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+.hero {
+    background: #e0f7fa;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 60px; 
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 25px; 
+}
+
+button {
+    background: #00796b;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005f56;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.2rem;
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+section ul {
+    padding-left: 40px;
+}
+
+section li {
+    margin-bottom: 10px;
+}
+
+section li:before {
+    content: "✔";
+    color: #00796b;
+    margin-right: 10px; 
+}
+
+#video {
+    display: block;
+    margin: auto;
+}
+
+.subscribe h3 {
+    font-size: 1.5rem;
+}
+
+#contact {
+    background: rgb(235, 235, 235);
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+#contact .website, #contact .socials {
+    margin-bottom: 10px;
+}
+
+#contact .socials ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+#contact .socials ul li {
+    margin: 0 10px;
+}
+
+#contact .socials p {
+    margin: 0;
+}
+
+#contact .socials ul li a {
+    color: #333;
+    font-size: 1.5em;
+}
+
+#contact .socials ul li a:hover {
+    color: blue;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 10px;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section ul {
+        padding-left: 20px;
+    }
+
+    section li {
+        font-size: 1rem;
+    }
+
+    .subscribe h3 {
+        font-size: 1.2rem;
+    }
+
+    #video {
+        width: 100%;
+        height: auto;
+    }
+
+    #contact {
+        text-align: center;
+    }
+
+    #contact .socials ul {
+        flex-direction: column;
+    }
+
+    #contact .socials ul li {
+        margin: 10px 0;
+    }
+
+    #contact .socials ul li a {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 10px;
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px;
+        font-size: 1.1rem;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    section ul {
+        padding-left: 30px;
+    }
+
+    section li {
+        font-size: 1.1rem;
+    }
+
+    .subscribe h3 {
+        font-size: 1.3rem;
+    }
+
+    #video {
+        width: 100%;
+        height: auto;
+    }
+
+    #contact .socials ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #contact .socials ul li {
+        margin: 10px;
+    }
+
+    #contact .socials ul li a {
+        font-size: 1.3em;
+    }
+}
